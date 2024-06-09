@@ -1,0 +1,9 @@
+com\testingTask\justAi\JustAiApplication.class
+com\testingTask\justAi\objects\IncomingMessage.class
+com\testingTask\justAi\configs\RestTemplateConfiguration.class
+com\testingTask\justAi\objects\IncAttachments.class
+com\testingTask\justAi\objects\IncMessage.class
+com\testingTask\justAi\controllers\ConfirmationController.class
+com\testingTask\justAi\services\impl\MessagesServiceImpl.class
+com\testingTask\justAi\services\MessagesService.class
+com\testingTask\justAi\objects\IncMessageObject.class
