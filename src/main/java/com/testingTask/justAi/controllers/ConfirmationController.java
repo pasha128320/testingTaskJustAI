@@ -28,7 +28,6 @@ public class ConfirmationController {
     @PostMapping
     @ResponseBody
     public String getEventQuery(@RequestBody String response) { // get event notification from CallBack API
-        System.out.println(response);
         // If VK require confirm server address
         if(response.contains("\"type\":\"confirmation\"")){
             return environment.getProperty("CONFIRMATION_KEY");
