@@ -1,6 +1,7 @@
 package com.testingTask.justAi.objects;
 
 
+import java.util.List;
 
 public class Message {
 
@@ -12,6 +13,8 @@ public class Message {
 
     private Integer version;
 
+    private List<Attachments> attachments;
+
     private Integer conversation_message_id;
 
     private Integer peer_id;
@@ -22,6 +25,10 @@ public class Message {
 
     public Integer getDate() {
         return date;
+    }
+
+    public List<Attachments> getAttachments() {
+        return attachments;
     }
 
     public Integer getFrom_id() {

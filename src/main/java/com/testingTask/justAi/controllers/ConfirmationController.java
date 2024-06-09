@@ -29,14 +29,18 @@ public class ConfirmationController {
     @ResponseBody
     public String getEventQuery(@RequestBody String response) { // get event notification from CallBack API
 
+        // If VK require confirm server address
+        if(response.equals("{ \"type\": \"confirmation\", \"group_id\": 226173682 }")) return environment.getProperty("CONFIRMATION_KEY");
+
 
         Gson gson = new Gson(); // initializing JSON parser
         IncomingMessage incomingMessage = gson.fromJson(response, IncomingMessage.class); // get EventAnswer object from JSON string
 
-        //
+        // If notification has new message from user for answer
         if(incomingMessage.getType().equals("message_new")) {
             messagesService.messagesSend(incomingMessage);
         }
+
         return "ok"; // API requires return message "ok" to stop sending the last notification
     }
 
