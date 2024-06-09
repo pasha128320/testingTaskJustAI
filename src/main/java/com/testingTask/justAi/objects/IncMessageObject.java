@@ -2,9 +2,9 @@ package com.testingTask.justAi.objects;
 
 
 
-public class MessageObject {
+public class IncMessageObject {
 
-    private Message message;
+    private IncMessage message;
 
     private boolean keyboard;
 
@@ -14,7 +14,7 @@ public class MessageObject {
 
     private Integer lang_id;
 
-    public Message getMessage() {
+    public IncMessage getMessage() {
         return message;
     }
 

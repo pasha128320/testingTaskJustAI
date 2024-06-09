@@ -3,7 +3,7 @@ package com.testingTask.justAi.objects;
 
 import java.util.List;
 
-public class Message {
+public class IncMessage {
 
     private Integer date;
 
@@ -13,7 +13,7 @@ public class Message {
 
     private Integer version;
 
-    private List<Attachments> attachments;
+    private List<IncAttachments> attachments;
 
     private Integer conversation_message_id;
 
@@ -27,7 +27,7 @@ public class Message {
         return date;
     }
 
-    public List<Attachments> getAttachments() {
+    public List<IncAttachments> getAttachments() {
         return attachments;
     }
 

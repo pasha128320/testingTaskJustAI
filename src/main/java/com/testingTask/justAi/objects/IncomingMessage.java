@@ -11,7 +11,7 @@ public class IncomingMessage {
 
     private String v;
 
-    private MessageObject object;
+    private IncMessageObject object;
 
 
     public Integer getGroup_id() {
@@ -30,7 +30,7 @@ public class IncomingMessage {
         return v;
     }
 
-    public MessageObject getObject() {
+    public IncMessageObject getObject() {
         return object;
     }
 }
