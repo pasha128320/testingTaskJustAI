@@ -28,10 +28,11 @@ public class ConfirmationController {
     @PostMapping
     @ResponseBody
     public String getEventQuery(@RequestBody String response) { // get event notification from CallBack API
-
+        System.out.println(response);
         // If VK require confirm server address
-        if(response.equals("{ \"type\": \"confirmation\", \"group_id\": 226173682 }")) return environment.getProperty("CONFIRMATION_KEY");
-
+        if(response.contains("\"type\":\"confirmation\"")){
+            return environment.getProperty("CONFIRMATION_KEY");
+        }
 
         Gson gson = new Gson(); // initializing JSON parser
         IncomingMessage incomingMessage = gson.fromJson(response, IncomingMessage.class); // get EventAnswer object from JSON string
