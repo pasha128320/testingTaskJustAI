@@ -1,6 +1,6 @@
 package com.testingTask.justAi.objects;
 
-public class AnswerMessage {
+public class OutgoingMessage {
 
 
 

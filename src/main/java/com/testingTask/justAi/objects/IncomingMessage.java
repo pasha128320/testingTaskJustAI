@@ -1,7 +1,7 @@
 package com.testingTask.justAi.objects;
 
 
-public class EventNotification {
+public class IncomingMessage {
 
     private Integer group_id;
 

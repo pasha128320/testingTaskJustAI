@@ -12,8 +12,6 @@ public class Message {
 
     private Integer version;
 
-    // List<Attachments> attachments;
-
     private Integer conversation_message_id;
 
     private Integer peer_id;
