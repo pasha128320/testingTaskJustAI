@@ -18,11 +18,14 @@ public class ConfirmationController {
     private Environment environment;
     private MessagesServiceImpl messagesService;
 
+
+
     @Autowired
     public ConfirmationController(RestTemplate restTemplate, Environment environment, MessagesServiceImpl messagesService) {
         this.restTemplate = restTemplate;
         this.environment = environment;
         this.messagesService = messagesService;
+        System.out.println(environment);
     }
 
     @PostMapping
